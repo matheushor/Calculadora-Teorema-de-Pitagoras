@@ -1,0 +1,160 @@
+
+  body {
+    font-family: "Acme", sans-serif, "poppins";
+    font-size: 20px;
+    color: #f9f9f9;
+    background-color:#d4d4d4
+  }
+
+  .calc-hipotenusa h1 {
+    width: 110%;
+    text-align: center;
+    font-size: 5em;
+    text-decoration: underline;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .calc-hipotenusa {
+    padding: 1em;
+    border-radius: 15px 15px 15px;
+    box-shadow: 6px 6px 20px rgb(38, 38, 38), -6px -6px 20px rgb(59, 59, 59);
+    background-color: #000000;
+  }
+  
+  @media (min-width: 500px) {
+    .calc-hipotenusa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 500px;
+      width: 100%;
+      padding: 1em;
+    }
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem;
+  }
+  
+  .form label,
+  .form button {
+    margin-top: 3em;
+    color: #ffffff;
+  }
+  
+  .form input,
+  .form button {
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 20px 20px 20px;
+    width: 55%;
+    color: #000000;
+    padding: 0.5em;
+  }
+  
+  .form button {
+    background-color: #702323;
+    cursor: pointer;
+    border-radius: 0.3em;
+    width: 45%;
+  }
+  
+  .form button:hover {
+    filter: opacity(0.8);
+  }
+  
+  .form button:active {
+    background-color: #484848;
+    color: rgb(76, 76, 76);
+    filter: opacity(0.8);
+  }
+  
+  .message {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    font-style: italic;
+    position: fixed;
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .message {
+      bottom: 0;
+    }
+  }
+  
+  .sucess {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .warning {
+    background-color: #ffd21f;
+    color: #fff;
+  }
+  
+  .alert {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .danger {
+    background-color: #c0392b;
+    color: #fff;
+  }
+  
+  .alert {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    font-style: italic;
+    position: fixed;
+    box-shadow: 0 0 4px rgb(134, 21, 21);
+    background-color: #ef5350;
+    color: #fff;
+  }
+  
+h1{
+    font-size: 43px;
+    text-align: center;
+    color: #000000;
+    margin-top: 0;
+}
+
+p{
+    font-size: 18px;
+    text-align:justify;
+    line-height: 25px;
+    height: 0.1rem;
+    color: #000000;
+}
+
+#triangulo {
+    width: 500px;
+    margin: 50px auto -200px; 
+   display: flex;
+}
+
+  @media screen and (max-width: 500px) {
+    .alert {
+      bottom: 0;
+    }
+  }
+
