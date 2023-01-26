@@ -1,260 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora do Teorema de Pitágoras</title>    
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
-
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"></svg>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"">
+    <title>Calculadora do Teorema de Pitágoras</title>
 </head>
 <body>
-  <h1>Calculadora do Teorema de Pitágoras</h1>
-    <p><span class="dropcap"><b>N</b></span>um triângulo retângulo, sempre que souber o comprimento de dois dos seus lados, torna-se relativamente fácil descobrir o comprimento do terceiro lado que falta. Para descobrir isso basta utilizar a seguinte fórmula designada por Teorema de Pitágoras</a>: `h^2=c^2+c^2`. Em linguagem corrente este teorema afirma que o quadrado da hipotenusa é igual à soma do quadrado dos catetos. Para ver como é que funciona basta introduzir nas respetivas caixas os valores conhecidos. A nossa calculadora irá mostrar os cálculos necessários para obter o resultado.</p>
-  </body>
- <svg id="triangulo" width="662.000000pt" height="386.000000pt" viewBox="0 0 662.000000 386.000000"
- preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,386.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M747 3656 c-33 -31 -49 -89 -38 -139 12 -49 25 -65 72 -78 52 -16 99
-2 99 39 0 20 -3 23 -12 14 -17 -17 -74 -15 -92 4 -21 20 -21 93 0 123 17 23
-43 25 87 6 13 -6 17 -2 17 18 0 45 -89 54 -133 13z"/>
-<path d="M750 1910 l0 -1410 2775 0 c1526 0 2775 2 2775 4 0 2 -91 50 -202
-106 -112 57 -367 187 -568 290 -201 103 -444 226 -540 275 -96 48 -402 203
--680 345 -278 141 -795 405 -1150 585 -355 180 -890 452 -1190 605 -1047 533
--1199 610 -1210 610 -7 0 -10 -440 -10 -1410z m526 1116 c258 -131 710 -361
-1004 -511 294 -150 843 -429 1220 -620 1088 -553 1544 -786 1553 -794 4 -4 -4
--27 -17 -52 -14 -24 -37 -84 -52 -134 -22 -75 -27 -110 -28 -215 0 -69 3 -135
-7 -148 l8 -22 -1775 0 -1776 0 0 285 0 285 -315 0 -315 0 0 1086 c0 597 4
-1084 8 1082 5 -1 219 -110 478 -242z m4779 -2433 l100 -53 -572 0 -572 0 -13
-23 c-18 31 -15 206 5 288 21 88 54 172 78 202 l19 25 428 -216 c235 -118 472
--239 527 -269z m-4675 212 l0 -265 -290 0 -290 0 0 265 0 265 290 0 290 0 0
--265z"/>
-<path d="M4660 910 c-31 -31 -28 -113 5 -145 29 -30 58 -32 84 -6 19 19 20 19
-35 -2 13 -19 17 -20 25 -7 6 8 11 22 11 30 0 13 -1 13 -10 0 -7 -12 -12 -12
--22 -2 -9 9 -9 24 0 70 15 75 15 82 -3 82 -8 0 -15 -9 -15 -20 0 -11 -3 -20
--8 -20 -4 0 -13 9 -20 20 -7 11 -23 20 -37 20 -14 0 -34 -9 -45 -20z m82 -26
-c14 -24 16 -37 7 -67 -25 -90 -74 -79 -74 17 0 53 17 90 39 83 6 -2 19 -17 28
--33z"/>
-<path d="M1062 828 c-32 -32 8 -80 48 -58 34 18 19 70 -20 70 -9 0 -21 -5 -28
--12z"/>
-<path d="M500 2983 c-57 -22 -70 -101 -24 -144 34 -32 104 -34 135 -2 29 29
-30 97 2 125 -20 20 -86 32 -113 21z m88 -55 c45 -45 -36 -92 -88 -50 -19 16
--21 22 -11 40 9 17 21 22 49 22 21 0 43 -5 50 -12z"/>
-<path d="M450 2770 c0 -13 -7 -20 -20 -20 -14 0 -20 -7 -20 -21 0 -12 8 -23
-20 -26 11 -3 20 -9 20 -14 0 -5 9 -9 20 -9 11 0 20 5 20 10 0 6 24 10 53 10
-72 0 92 17 88 73 -1 24 -27 22 -34 -3 -4 -17 -14 -20 -56 -20 -44 0 -51 3 -51
-20 0 13 -7 20 -20 20 -13 0 -20 -7 -20 -20z"/>
-<path d="M2634 2649 c-43 -87 -53 -114 -42 -120 25 -16 34 -9 61 46 19 40 32
-55 47 55 33 0 35 -28 7 -85 -22 -45 -24 -55 -12 -65 8 -6 19 -9 24 -6 14 9 61
-115 61 136 0 26 -27 50 -56 50 -28 0 -29 2 -8 41 17 34 13 59 -11 59 -9 0 -36
--43 -71 -111z"/>
-<path d="M2867 2663 c-21 -21 9 -63 34 -47 15 9 10 41 -7 48 -19 7 -19 7 -27
--1z"/>
-<path d="M456 2645 c-20 -53 2 -105 44 -105 25 0 33 7 50 41 25 48 45 46 44
--5 -1 -25 3 -36 13 -36 31 0 37 86 7 110 -26 23 -68 7 -89 -32 -24 -45 -40
--44 -41 2 0 36 -18 51 -28 25z"/>
-<path d="M2803 2525 c-32 -64 -36 -77 -23 -85 8 -5 18 -10 22 -10 3 0 23 34
-45 75 32 64 36 77 23 85 -25 16 -29 13 -67 -65z"/>
-<path d="M2872 2454 c-29 -58 -50 -109 -47 -115 13 -20 43 -8 55 21 l12 30 25
--20 c34 -26 65 -25 90 3 66 71 53 157 -23 157 -12 0 -24 7 -28 15 -12 33 -34
-10 -84 -91z m126 15 c2 -14 -6 -37 -18 -52 -18 -22 -25 -25 -41 -17 -25 14
--24 55 2 81 26 26 53 21 57 -12z"/>
-<path d="M478 2490 c-22 -17 -28 -30 -28 -61 0 -22 4 -48 10 -58 23 -45 119
--51 155 -11 25 28 24 96 -3 122 -31 31 -100 35 -134 8z m112 -45 c29 -35 -18
--75 -72 -62 -31 8 -42 31 -28 58 13 23 81 27 100 4z"/>
-<path d="M3088 2433 c-61 -70 -46 -143 34 -168 62 -20 128 70 102 140 -16 40
--109 59 -136 28z m91 -41 c12 -23 -16 -85 -40 -90 -25 -5 -51 26 -43 52 16 52
-64 74 83 38z"/>
-<path d="M3306 2395 c-3 -8 -13 -15 -22 -15 -12 0 -15 -6 -11 -21 3 -11 -5
--43 -18 -71 -26 -56 -22 -78 16 -99 29 -15 45 2 28 29 -11 17 -10 27 6 61 15
-35 21 40 41 35 18 -5 24 -2 24 10 0 9 -7 19 -15 22 -11 4 -12 11 -5 23 6 12 5
-22 -2 29 -16 16 -35 15 -42 -3z"/>
-<path d="M472 2284 c-24 -17 -29 -53 -11 -87 9 -16 9 -22 0 -25 -6 -2 -11 -10
--11 -18 0 -11 24 -14 125 -14 118 0 125 1 125 20 0 17 -7 20 -41 20 -37 0 -40
-2 -33 23 12 35 7 61 -17 80 -27 22 -106 23 -137 1z m109 -43 c23 -19 24 -19 5
--40 -25 -27 -70 -27 -90 0 -23 34 -7 54 45 58 9 0 27 -8 40 -18z"/>
-<path d="M3387 2288 c-9 -7 -24 -30 -32 -52 -13 -31 -14 -44 -5 -67 12 -29 63
--59 99 -59 31 0 26 27 -6 35 -37 9 -53 23 -53 46 0 25 14 24 62 -3 39 -22 40
--22 54 -3 23 31 17 71 -12 94 -30 23 -82 27 -107 9z m81 -30 c30 -30 2 -50
--39 -27 -16 8 -18 13 -8 25 14 17 31 18 47 2z"/>
-<path d="M3538 2156 c-32 -64 -35 -76 -22 -87 18 -14 21 -11 54 49 17 31 33
-48 48 50 34 5 36 -20 7 -78 -21 -41 -24 -55 -14 -66 6 -8 15 -14 20 -14 12 0
-69 115 69 138 0 26 -31 52 -62 52 -14 0 -28 7 -32 15 -12 31 -33 13 -68 -59z"/>
-<path d="M3726 2081 c-14 -32 -26 -67 -26 -78 0 -26 31 -53 60 -53 12 0 29 -8
-36 -17 13 -17 15 -17 30 2 33 43 76 137 65 148 -17 17 -40 0 -63 -48 -21 -44
--47 -63 -68 -50 -16 10 -12 33 15 88 20 39 23 52 13 58 -25 17 -36 8 -62 -50z"/>
-<path d="M476 2079 c-20 -16 -26 -29 -26 -60 0 -22 4 -48 10 -58 14 -26 64
--44 103 -37 48 9 70 37 70 88 0 33 -6 47 -27 65 -35 30 -93 31 -130 2z m114
--44 c17 -20 3 -54 -26 -61 -55 -14 -95 17 -74 57 13 23 81 27 100 4z"/>
-<path d="M3920 2021 c-15 -28 -13 -45 10 -74 11 -14 20 -30 20 -36 0 -16 -36
--13 -50 4 -17 21 -30 19 -30 -5 0 -25 54 -54 86 -46 14 4 30 18 36 32 10 20 8
-29 -10 54 -36 48 -27 76 14 45 24 -18 34 -19 34 -2 0 42 -90 65 -110 28z"/>
-<path d="M4065 1960 c-3 -6 2 -13 12 -16 49 -16 63 -25 63 -44 0 -17 -3 -18
--26 -10 -14 6 -38 10 -53 10 -75 0 -66 -91 10 -107 16 -3 29 -9 29 -14 0 -5 7
--9 15 -9 21 0 78 117 71 146 -10 39 -103 73 -121 44z m44 -99 c7 -5 10 -14 7
--20 -9 -14 -53 -15 -61 -1 -15 25 24 40 54 21z"/>
-<path d="M493 1800 c-39 -16 -57 -85 -33 -130 22 -42 121 -48 156 -9 24 26 22
-95 -3 121 -23 22 -87 32 -120 18z m88 -50 c42 -23 12 -70 -45 -70 -24 0 -56
-23 -56 40 0 32 62 51 101 30z"/>
-<path d="M450 1591 c0 -10 -9 -21 -20 -24 -25 -6 -28 -47 -4 -47 9 0 23 -8 30
--17 13 -17 15 -17 28 0 9 12 27 17 63 17 68 0 88 17 84 73 -1 24 -27 22 -34
--3 -4 -17 -14 -20 -56 -20 -44 0 -51 3 -51 20 0 13 -7 20 -20 20 -13 0 -20 -7
--20 -19z"/>
-<path d="M476 1459 c-28 -22 -36 -73 -16 -109 22 -41 122 -46 156 -9 17 19 23
-96 9 118 -16 27 -30 9 -27 -32 3 -30 -1 -47 -12 -56 -25 -21 -36 -3 -36 55 0
-50 -2 54 -24 54 -13 0 -35 -9 -50 -21z m44 -65 c0 -23 -4 -34 -12 -32 -33 11
--36 68 -3 68 11 0 15 -10 15 -36z"/>
-<path d="M450 1270 c0 -13 -7 -20 -20 -20 -13 0 -20 -7 -20 -20 0 -11 6 -20
-13 -20 7 0 21 -10 31 -22 l19 -22 15 22 c12 18 24 22 66 22 28 0 56 4 62 8 15
-10 24 40 18 57 -9 22 -31 18 -37 -5 -4 -17 -14 -20 -56 -20 -44 0 -51 3 -51
-20 0 13 -7 20 -20 20 -13 0 -20 -7 -20 -20z"/>
-<path d="M460 1131 c-23 -43 -1 -135 28 -117 8 4 8 15 0 36 -7 23 -7 34 2 45
-19 23 30 18 30 -15 0 -43 40 -83 72 -71 31 11 49 48 38 76 -5 13 -6 32 -3 44
-5 20 2 21 -75 21 -70 0 -83 -3 -92 -19z m124 -27 c24 -9 21 -54 -3 -54 -20 0
--37 32 -26 50 7 12 8 12 29 4z"/>
-<path d="M457 973 c-4 -3 -7 -23 -7 -44 0 -50 35 -79 95 -79 58 0 87 25 87 72
-0 43 -7 58 -29 58 -11 0 -14 -6 -9 -26 9 -36 -9 -54 -54 -54 -46 0 -66 20 -51
-49 6 11 11 22 11 25 0 8 -35 7 -43 -1z"/>
-<path d="M3327 424 c-4 -4 -7 -24 -7 -45 l0 -37 -38 5 c-34 4 -42 1 -60 -22
--32 -40 -30 -108 3 -140 28 -29 36 -30 75 -10 21 11 30 11 32 3 3 -7 12 -9 21
--5 16 6 17 21 15 129 -3 101 -6 123 -18 126 -9 1 -19 0 -23 -4z m-19 -126 c20
--20 15 -76 -9 -88 -38 -21 -64 30 -43 84 7 19 35 21 52 4z"/>
-<path d="M6184 417 c-2 -7 -3 -60 -2 -118 l3 -104 62 -3 c56 -3 66 0 88 22 30
-30 32 59 4 87 -16 16 -18 23 -9 34 19 23 8 68 -20 82 -34 17 -119 17 -126 0z
-m101 -57 c0 -20 -6 -26 -27 -28 -25 -3 -28 0 -28 28 0 28 3 31 28 28 21 -2 27
--8 27 -28z m13 -102 c2 -18 -1 -28 -10 -28 -7 0 -23 -3 -35 -6 -21 -6 -23 -3
--23 30 0 36 1 37 33 34 27 -2 33 -8 35 -30z"/>
-<path d="M3420 405 c-9 -11 -10 -19 -3 -26 17 -17 48 -6 48 16 0 25 -28 31
--45 10z"/>
-<path d="M2300 371 c0 -10 -7 -21 -15 -25 -8 -3 -15 -12 -15 -20 0 -7 7 -16
-15 -20 11 -4 15 -21 15 -66 0 -54 2 -62 24 -72 14 -6 32 -8 40 -5 22 9 21 45
--1 43 -15 -1 -19 9 -21 52 -3 47 -1 52 17 52 27 0 27 27 1 35 -11 3 -20 15
--20 26 0 12 -7 19 -20 19 -13 0 -20 -7 -20 -19z"/>
-<path d="M2610 366 c-5 -13 -15 -26 -22 -29 -10 -4 -9 -9 5 -20 12 -10 17 -29
-17 -66 0 -58 26 -94 63 -89 28 4 38 47 10 44 -15 -1 -19 8 -21 52 -3 47 -1 52
-18 52 15 0 20 5 18 18 -2 9 -10 16 -16 14 -7 -1 -17 9 -22 23 -12 32 -38 32
--50 1z"/>
-<path d="M4260 370 c0 -11 -7 -23 -15 -26 -8 -4 -15 -12 -15 -19 0 -7 7 -15
-15 -19 11 -4 15 -21 15 -60 0 -48 3 -58 25 -72 29 -19 68 -10 63 14 -2 10 -10
-17 -18 17 -11 0 -16 14 -18 53 -3 47 -1 52 17 52 12 0 21 7 21 15 0 8 -9 15
--19 15 -13 0 -21 8 -23 23 -4 30 -48 38 -48 7z"/>
-<path d="M763 348 c-6 -7 -27 -60 -47 -117 -27 -77 -34 -106 -25 -112 19 -11
-37 0 43 27 6 21 12 24 55 24 45 0 50 -2 60 -30 10 -31 38 -40 47 -17 6 17 -64
-219 -80 229 -17 12 -42 9 -53 -4z m56 -125 c1 -8 -11 -13 -29 -13 -35 0 -36 4
--14 56 l17 39 13 -35 c7 -19 13 -41 13 -47z"/>
-<path d="M1966 329 c-21 -17 -26 -29 -26 -68 0 -53 19 -86 54 -95 35 -9 76 9
-76 34 0 17 -4 18 -25 10 -14 -5 -32 -7 -40 -4 -21 9 -30 51 -16 81 10 22 16
-25 46 20 29 -5 35 -3 35 13 0 35 -63 41 -104 9z"/>
-<path d="M2118 339 c-35 -20 -21 -37 28 -36 59 2 70 -18 15 -27 -46 -7 -74
--39 -65 -73 7 -25 56 -49 76 -37 7 5 26 8 43 9 l30 0 0 73 c0 61 -3 76 -19 88
--23 16 -83 18 -108 3z m77 -115 c0 -13 -8 -20 -27 -22 -22 -3 -28 1 -28 17 0
-18 22 31 45 26 6 -1 10 -10 10 -21z"/>
-<path d="M2434 327 c-22 -20 -27 -32 -27 -70 0 -55 21 -84 67 -92 37 -7 86 9
-86 28 0 9 -14 13 -47 13 -42 -1 -48 2 -51 22 -3 21 0 22 54 22 l57 0 -7 33
-c-12 65 -81 88 -132 44z m84 -29 c3 -14 -3 -18 -27 -18 -29 0 -41 17 -24 34
-13 13 48 1 51 -16z"/>
-<path d="M2763 338 c-28 -13 -47 -68 -38 -108 7 -33 48 -70 77 -70 28 0 76 27
-88 49 5 11 10 36 10 56 0 68 -70 105 -137 73z m85 -75 c3 -34 -1 -44 -17 -53
--33 -17 -61 3 -61 43 0 40 17 59 50 55 22 -3 25 -9 28 -45z"/>
-<path d="M3038 339 c-35 -20 -21 -37 28 -36 30 1 48 -3 51 -10 3 -8 -4 -13
--15 -13 -87 0 -125 -80 -53 -110 21 -8 35 -9 48 -1 11 5 29 7 41 4 21 -5 22
--2 22 70 0 55 -4 80 -16 91 -17 18 -80 21 -106 5z m82 -108 c0 -19 -18 -31
--46 -31 -20 0 -17 27 4 39 26 16 42 13 42 -8z"/>
-<path d="M3528 339 c-10 -5 -18 -16 -18 -24 0 -11 10 -13 43 -9 34 5 45 3 50
--9 4 -11 -4 -16 -33 -21 -67 -11 -90 -56 -49 -97 16 -16 28 -19 47 -14 15 4
-39 7 55 6 l27 0 0 74 c0 54 -4 78 -16 89 -17 18 -80 21 -106 5z m77 -99 c9
--15 -14 -40 -36 -40 -24 0 -26 37 -1 43 28 8 31 7 37 -3z"/>
-<path d="M3720 332 c-50 -41 -31 -154 29 -167 37 -8 71 9 71 35 0 17 -3 18
--25 8 -37 -17 -57 5 -53 56 3 40 4 41 41 40 29 -1 37 2 37 16 0 33 -64 41
--100 12z"/>
-<path d="M3875 325 c-25 -24 -34 -81 -19 -120 17 -44 144 -59 144 -16 0 14 -9
-17 -47 17 -42 -1 -48 2 -51 22 -3 21 0 22 52 22 52 0 56 2 56 24 0 68 -86 101
--135 51z m85 -25 c10 -18 8 -20 -25 -20 -49 0 -47 36 2 39 7 1 17 -8 23 -19z"/>
-<path d="M4116 341 c-4 -6 -20 -8 -36 -4 l-30 6 0 -87 c0 -85 1 -87 23 -84 19
-3 22 10 25 60 3 59 20 85 47 74 11 -4 15 -22 15 -71 0 -63 1 -66 23 -63 20 3
-22 9 25 63 3 76 -13 109 -55 113 -17 2 -34 -1 -37 -7z"/>
-<path d="M4395 325 c-19 -18 -25 -35 -25 -70 0 -50 21 -80 64 -91 32 -8 80 8
-84 27 2 12 -8 15 -45 15 -42 -1 -48 2 -51 22 -3 21 0 22 52 22 56 0 56 0 56
-30 0 66 -86 95 -135 45z m83 -17 c20 -20 14 -28 -23 -28 -24 0 -35 5 -35 14 0
-24 39 33 58 14z"/>
-<path d="M3420 246 c0 -86 -2 -95 -22 -109 -28 -18 -13 -41 23 -35 36 5 49 43
-49 146 0 92 0 92 -25 92 -25 0 -25 0 -25 -94z"/>
-</g>
-</svg>
 
-    <main class="main">
-    <section class="calc-hipotenusa">
-      <form class="form" id="form">
-        <label for="co">
-          Cateto Oposto: 
-          <input name="co" id="co" placeholder="Entre com o valor" type="number" />
-        </label>
-        <label for="ca">
-          Cateto Adjacente: 
-          <input name="ca" id="ca" placeholder="Entre com o valor" type="number" />
-        </label>
-        <label for="hipotenusa">
-          Hipotenusa: 
-          <input disabled="disabled" name="hipotenusa" id="hipotenusa" />
-        </label>
-        <button>Calcular</button>
-      </form>
-    </section>
-  </main>
-</div>
+
+    <main class="containerCalulator">
+        <div>
+            <h1> <h1>Calculadora do Teorema de Pitágoras</h1></h1>
+        
+          </div>
+    
+        <div class="calc">
+
+            
+
+            <div class="telaCalc">
+                <div class="tela_img">
+                    <div class="telaConteudo">
+                        <p > Cateto A: <span id="campo_a" class="campoAtivado"> 0 </span> </p>
+                        <hr>
+                        <p > Cateto B: <span id="campo_b"> 0 </span> </p>
+                        <hr>
+                        <p > Hipotenusa: <span id="campo_h"> 0 </span> </p>
+                    </div>
+                </div>   
+
+                
+            </div>
+    
+            <div class="layoteBtn">
+    
+                <button id="cateto_a" class="campoAtivo">Cateto A</button>
+                <button id="cateto_b" >Cateto B</button>
+                <button id="limpar" >LIMPAR</button>
+    
+                <button id="hipotenusa" class="twoSpace">Hipotenusa</button>
+                <button id="." >.</button>
+    
+                <button id="7" >7</button>
+                <button id="8" >8</button>
+                <button id="9" >9</button>
+    
+                <button id="4" >4</button>
+                <button id="5" >5</button>
+                <button id="6" >6</button>
+    
+                <button id="1" >1</button>
+                <button id="2" >2</button>
+                <button id="3" >3</button>
+    
+                <button id="0" class="twoSpace">0</button>
+                <button id="=" >=</button>
+                
+            </div>
+    
+        </div>
+    </main>
+
+
+    <div class="dadosCalculator">
+
+        <div class="dados">
+            <label for="hipotenusaValue"> A hipotenusa é: </label>
+            <input type="text" disabled="disable" id="hipotenusaValue" value="">
+        </div>
+
+        <div class="dados">
+            <label for="catetoA_value"> O cateto A é: </label>
+            <input type="text" disabled="disable" id="catetoA_value" value="">
+        </div>
+
+        <div class="dados">
+            <label for="catetoB_value"> O cateto B é: </label>
+            <input type="text" disabled="disable" id="catetoB_value" value="">
+        </div>
+
+        <div class="dados">
+            <label for="triânguloValue"> A área do triângulo é: </label>
+            <input type="text" disabled="disable" id="triânguloValue" value="">
+        </div>
+
+        <div class="dados">
+            <label for="alturaValue"> A altura da hipotenusa é: </label>
+            <input type="text" disabled="disable" id="alturaValue" value="">
+        </div>
+
+    </div>
+   
+
+    <script src="funçoes.js" ></script>
 </body>
 </html>
-
-<script>
-const $form = document.querySelector("form");
-const $ca = document.querySelector("#ca");
-const $co = document.querySelector("#co");
-const $hipotenusa = document.querySelector("#hipotenusa");
-
-function hipotenusa() {
-  const ca = $ca.value;
-  const co = $co.value;
-
-  if (!co) {
-    createAlert("Insira o valor do cateto oposto");
-  } else if (!ca) {
-    createAlert("Insira o valor do cateto adjacente");
-  } else if (ca <= 0 || co <= 0) {
-    createAlert("Entre com valores maiores que 0");
-  } else {
-    $hipotenusa.value = Math.hypot(ca, co).toFixed(2);
-  }
-}
-
-function createAlert(msg) {
-  document
-    .querySelector("body")
-    .insertAdjacentHTML("beforebegin", `<div class='alert'>${msg}</div>`);
-
-  setTimeout(function () {
-    deleteAlert();
-  }, 3000);
-}
-
-function deleteAlert() {
-  const list = document.querySelectorAll(".alert");
-  for (const item of list) {
-    item.remove();
-  }
-}
-
-$form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  hipotenusa();
-});
-
-</script>
-
