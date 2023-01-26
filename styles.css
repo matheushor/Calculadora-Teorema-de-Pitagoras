@@ -1,160 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "Acme", sans-serif, "poppins";
-    font-size: 20px;
-    color: #f9f9f9;
-    background-color:#d4d4d4
-  }
+.campoAtivo {
+  background-color: rgb(86, 167, 222);
+}
 
-  .calc-hipotenusa h1 {
-    width: 110%;
-    text-align: center;
-    font-size: 5em;
-    text-decoration: underline;
-  }
-  
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  .calc-hipotenusa {
-    padding: 1em;
-    border-radius: 15px 15px 15px;
-    box-shadow: 6px 6px 20px rgb(38, 38, 38), -6px -6px 20px rgb(59, 59, 59);
-    background-color: #000000;
-  }
-  
-  @media (min-width: 500px) {
-    .calc-hipotenusa {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 500px;
-      width: 100%;
-      padding: 1em;
-    }
-  }
-  
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0rem;
-  }
-  
-  .form label,
-  .form button {
-    margin-top: 3em;
-    color: #ffffff;
-  }
-  
-  .form input,
-  .form button {
-    font-size: inherit;
-    font-family: inherit;
-    border-radius: 20px 20px 20px;
-    width: 55%;
-    color: #000000;
-    padding: 0.5em;
-  }
-  
-  .form button {
-    background-color: #702323;
-    cursor: pointer;
-    border-radius: 0.3em;
-    width: 45%;
-  }
-  
-  .form button:hover {
-    filter: opacity(0.8);
-  }
-  
-  .form button:active {
-    background-color: #484848;
-    color: rgb(76, 76, 76);
-    filter: opacity(0.8);
-  }
-  
-  .message {
-    display: block;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.2rem;
-    font-style: italic;
-    position: fixed;
-    box-shadow: 0 0 4px rgb(255, 255, 255);
-  }
-  
-  @media screen and (max-width: 500px) {
-    .message {
-      bottom: 0;
-    }
-  }
-  
-  .sucess {
-    background-color: #2ecc71;
-    color: #fff;
-  }
-  
-  .warning {
-    background-color: #ffd21f;
-    color: #fff;
-  }
-  
-  .alert {
-    background-color: #e74c3c;
-    color: #fff;
-  }
-  
-  .danger {
-    background-color: #c0392b;
-    color: #fff;
-  }
-  
-  .alert {
-    display: block;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.2rem;
-    font-style: italic;
-    position: fixed;
-    box-shadow: 0 0 4px rgb(134, 21, 21);
-    background-color: #ef5350;
-    color: #fff;
-  }
-  
+h1 {
+  text-align: center;
+}
+
+html {
+  font: 400 12px arial,Helvetica,sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 90px 0;
+  flex-direction: column;
+}
+
 h1{
-    font-size: 43px;
-    text-align: center;
-    color: #000000;
-    margin-top: 0;
+  font-size: 35px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 100px;
 }
 
-p{
-    font-size: 18px;
-    text-align:justify;
-    line-height: 25px;
-    height: 0.1rem;
-    color: #000000;
+
+
+.dadosCalculator {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
 }
 
-#triangulo {
-    width: 500px;
-    margin: 50px auto -200px; 
-   display: flex;
+.dadosCalculator input {
+  width: 100%;
 }
 
-  @media screen and (max-width: 500px) {
-    .alert {
-      bottom: 0;
-    }
+.dados {
+  width: 100%;
+}
+
+.containerCalulator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.calc {
+  width: 270px;
+  height: 450px;
+  background-color: rgb(160, 225, 249);
+  border-radius: 15px;
+  border: solid 2px rgb(0, 0, 0);
+  overflow: hidden;
+  box-shadow: 6px 6px 20px rgb(38, 38, 38), -6px -6px 20px rgb(59, 59, 59);
+  display: flex;
+  flex-direction: column;
+}
+
+.telaCalc {
+  height: 230px;
+  width: 100%;
+  border-bottom: solid 2px black;
+
+  background-color: rgba(0,0,0, 0.2);
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;  
+}
+
+.tela_img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telaConteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  z-index: 0;
+}
+
+.telaCalc p {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: black;
+  z-index: 0;
+}
+
+.telaCalc hr {
+  width: 100%;
+  z-index: 0;
+}
+
+.layoteBtn {
+  display: grid;
+  width: 100%;
+  height: 75%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  
+  padding: 1rem;
+  gap: 5px;
+}
+
+.layoteBtn button {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  
+}
+
+.layoteBtn .twoSpace {
+  grid-column: span 2;
+}
+
+@media(min-width: 900px) {
+  body {
+    flex-direction: row;
+      margin-top: auto;
+      width: 100%;
+
+      
+  } 
+
+  .dadosCalculator {  
+      width: 10%;
+      order: -1;
+     
   }
-
+}
