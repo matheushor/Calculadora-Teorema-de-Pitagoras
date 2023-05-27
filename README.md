@@ -5,3 +5,6 @@ Nesse projeto afirmei minhas habilidades em HTML, CSS e JavaScript e realizei um
 
 
 https://calculadora-teorema-de-pitagoras.netlify.app
+
+* comando push
+
